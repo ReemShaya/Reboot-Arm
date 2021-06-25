@@ -8,7 +8,23 @@ Welcome to my first Artificial Intelligence project. In this project I installed
 
 ## VMware Workstation
 
-This program provides virtual simulation of operating systems, with the ability to install a number of operating systems on one device at the same time. The requirements of your computer must comply with the requirements required to install this program, which are: a powerful 64-bit processor, and the random memory space should be at least 1 GB RAM, 1.5 GB storage space, and 1 GB storage space for the operating system. Now that you are sure that your device specifications comply with the required specifications, you can download the program from [here](https://my.vmware.com/en/web/vmware/downloads/details?downloadGroup=WKST-PLAYER-1612&productId=1039&rPId=66621) . After installation is complete, shutdown and restart your computer.
+This program provides virtual simulation of operating systems, with the ability to install a number of operating systems on one device at the same time.
+
+In the beginning, you must know the main requirements that must be available in your computer to install this program, and these requirements are as follows:
+
+1- Availability of a 64-bit central processor.
+
+2- Availability of either Windows or Linux operating systems.
+
+3- Availability of enough random space for the actual computer to be sufficient to run the virtual computer operating system and the applications that will be installed on it, and the minimum requirement at this level is 1 GB RAM, but 3 GB RAM or higher is recommended for the best possible performance.
+
+4- Availability of a 16-bit or 32-bit graphics card.
+
+5- At least 1.5 GB of storage space for installing the Vmware Workstation application plus 1 GB for the operating system to be installed.
+
+Now that you are sure that your device specifications comply with the required specifications, you can download the program from [here](https://my.vmware.com/en/web/vmware/downloads/details?downloadGroup=WKST-PLAYER-1612&productId=1039&rPId=66621) .
+
+After installation is complete, shutdown and restart your computer.
 
 ## Ubuntu
 
