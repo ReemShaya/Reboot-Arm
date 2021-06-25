@@ -10,7 +10,7 @@ Welcome to my first Artificial Intelligence project. In this project I installed
 
 This program provides virtual simulation of operating systems, with the ability to install a number of operating systems on one device at the same time.
 
-In the beginning, you must know the main requirements that must be available in your computer to install this program, and these requirements are as follows:
+In the beginning, you must know the main requirements that must be available in your computer to install this program, and these requirements are as follows :
 
 1- Availability of a 64-bit central processor.
 
