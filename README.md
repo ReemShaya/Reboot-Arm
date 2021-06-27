@@ -9,7 +9,7 @@ Welcome to my first artificial intelligence project. In this project I installed
 
 ## Commands to Install Ihe ROS System
 
-
+`
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
@@ -40,10 +40,10 @@ cd ~/catkin_ws/
 catkin_make
 
 cd ~/catkin_ws/src
-
+`
 ## Commands to Install Ihe Package of The Arm
 
-
+`
 git clone https://github.com/smart-methods/arduino_robot_arm.git 
 
 cd ~/catkin_ws
@@ -68,13 +68,13 @@ ctrl + o
 source ~/.bashrc
 
 roslaunch robot_arm_pkg check_motors.launch
-
+`
 ## Launching the Arm
 
 Type This Command in The Terminal :
-
+`
 roslaunch robot_arm_pkg check_motors.launch
-
+`
 Then the arm will work like the following picture
 
 ![image](https://user-images.githubusercontent.com/85775606/123556569-992e1d80-d794-11eb-89e5-2d8c643db191.png)
