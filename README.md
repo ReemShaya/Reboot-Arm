@@ -44,7 +44,7 @@ cd ~/catkin_ws/src
 ```
 
 
-## Commands to Install Ihe Package of The Arm
+## Commands to Install The Package of The Arm
 
 ```
 git clone https://github.com/smart-methods/arduino_robot_arm.git 
