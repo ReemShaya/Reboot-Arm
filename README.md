@@ -69,4 +69,14 @@ source ~/.bashrc
 
 roslaunch robot_arm_pkg check_motors.launch
 
-## 
+## Launching the Arm
+
+Type This Command in The Terminal :
+
+roslaunch robot_arm_pkg check_motors.launch
+
+Then the arm will work like the following picture
+
+![image](https://user-images.githubusercontent.com/85775606/123556569-992e1d80-d794-11eb-89e5-2d8c643db191.png)
+
+
