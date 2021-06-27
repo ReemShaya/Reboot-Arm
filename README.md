@@ -1,34 +1,72 @@
 # Reboot-Arm 
 
-## Table of Contents
 
 ## Introduction
-Welcome to my first Artificial Intelligence project. In this project I installed VMware Workstation 16 Player on my computer, installed Ubuntu 20.04 and then configured the ROS system, and finally installed the packages for the arm.
+
+Welcome to my first artificial intelligence project. In this project I installed VMware Workstation 16 Player on my PC, installed Ubuntu 20.04 then configured ROS and finally installed packages for the arm. I will write down the steps for installing the rose system and installing the packages for the arm.
 
 
-## VMware Workstation
 
-This program provides virtual simulation of operating systems, with the ability to install a number of operating systems on one device at the same time.
+## Commands to Install Ihe ROS System
 
-In the beginning, you must know the main requirements that must be available in your computer to install this program, and these requirements are as follows :
 
-1- Availability of a 64-bit central processor.
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
-2- Availability of either Windows or Linux operating systems.
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 
-3- Availability of enough random space for the actual computer to be sufficient to run the virtual computer operating system and the applications that will be installed on it, and the minimum requirement at this level is 1 GB RAM, but 3 GB RAM or higher is recommended for the best possible performance.
+sudo apt-get update
 
-4- Availability of a 16-bit or 32-bit graphics card.
+sudo apt-get install ros-noetic-desktop-full
 
-5- At least 1.5 GB of storage space for installing the Vmware Workstation application plus 1 GB for the operating system to be installed.
+apt-cache search ros-noetic
 
-Now that you are sure that your device specifications comply with the required specifications, you can download the program from [here](https://my.vmware.com/en/web/vmware/downloads/details?downloadGroup=WKST-PLAYER-1612&productId=1039&rPId=66621) .
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 
-After installation is complete, shutdown and restart your computer.
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 
-## Ubuntu
+sudo apt install python-rosdep
 
-[Ubuntu 20.04](https://ubuntu.com/#download)
+sudo rosdep init
 
-## ROS
+rosdep update
 
+sudo apt-get install ros-noetic-catkin
+
+mkdir -p ~/catkin_ws/src
+
+cd ~/catkin_ws/
+
+catkin_make
+
+cd ~/catkin_ws/src
+
+## Commands to Install Ihe Package of The Arm
+
+
+git clone https://github.com/smart-methods/arduino_robot_arm.git 
+
+cd ~/catkin_ws
+
+rosdep install --from-paths src --ignore-src -r -y
+
+sudo apt-get install ros-noetic-moveit
+
+sudo apt-get install ros-noetic-joint-state-publisher ros-kinetic-joint-state-publisher-gui
+
+sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher
+
+sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control
+
+sudo nano ~/.bashrc
+
+at the end of the (bashrc) file add the follwing line
+(source /home/ReemShaya/catkin_ws/devel/setup.bash)
+then 
+ctrl + o
+
+source ~/.bashrc
+
+roslaunch robot_arm_pkg check_motors.launch
+
+## 
