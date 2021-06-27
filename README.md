@@ -7,7 +7,7 @@ Welcome to my first artificial intelligence project. In this project I installed
 
 
 
-## Commands to Install Ihe ROS System
+## Commands to Install The ROS System
 
 
 ```
