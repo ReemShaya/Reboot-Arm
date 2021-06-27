@@ -44,8 +44,7 @@ cd ~/catkin_ws/src`
 
 ## Commands to Install Ihe Package of The Arm
 
-`
-git clone https://github.com/smart-methods/arduino_robot_arm.git 
+ ` git clone https://github.com/smart-methods/arduino_robot_arm.git 
 
 cd ~/catkin_ws
 
@@ -68,7 +67,7 @@ ctrl + o
 
 source ~/.bashrc
 
-roslaunch robot_arm_pkg check_motors.launch`
+roslaunch robot_arm_pkg check_motors.launch ` 
 
 ## Launching the Arm
 
