@@ -44,7 +44,7 @@ To install the ROS system :
 
 ```rosdep update```
 
-```sudo apt-get install ros-noetic-*************************************```
+```sudo apt-get install ros-noetic-catkin```
 
 To install catkin to be able to create a workspace :
 
