@@ -10,6 +10,8 @@ Welcome to my first artificial intelligence project. In this project I installed
 ## Commands to Install The ROS System
 
 
+All of the following commands should be written one by one in the Terminal
+
 
 To prepare the computer to install the ROS system :
 
