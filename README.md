@@ -12,61 +12,102 @@ Welcome to my first artificial intelligence project. In this project I installed
 
 All of the following commands should be written one by one in the Terminal
 
+<br /> 
+
+
 
 To prepare the computer to install the ROS system :
 
 ```sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list' ```
 
+<br /> 
+
+
+<br /> 
+
+
+
+
 
 To open the key server on the computer :
 
-
-
-
 ```sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654 -- ``` 
 
+
+
 ```sudo apt-get update```
+
+<br /> 
+
+
+<br /> 
 
 
 To install the ROS system :
 
 ```sudo apt-get install ros-noetic-desktop-full```
 
+
+
 ```apt-cache search ros-noetic```
+
 
 ```echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc```
 
+
+
 ```source ~/.bashrc```
+
+
 
 ```sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential```
 
+
+
+
 ```sudo apt install python-rosdep```
+
+
+
 
 ```sudo rosdep init```
 
+
+
 ```rosdep update```
+
+
 
 ```sudo apt-get install ros-noetic-catkin```
 
+<br /> 
 
-
-
-
+<br /> 
 
 
 To install catkin to be able to create a workspace :
 
 ```mkdir -p ~/catkin_ws/src```
 
+
+
+
 ```cd ~/catkin_ws/```
 
+
+
 ```catkin_make```
+
+
 
 ```cd ~/catkin_ws/src```
 
 
 
+
 ## Commands to Install The Package of The Arm
+
+
 
 
 To get to the packages of the robot arm :
@@ -84,6 +125,9 @@ To get to the packages of the robot arm :
 ```sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher```
 
 ```sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control```
+
+<br /> 
+
 
 Type this command in the terminal, then it will ask you for the password, and when you type the password, it will open another page for you :
 
