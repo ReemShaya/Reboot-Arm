@@ -10,68 +10,84 @@ Welcome to my first artificial intelligence project. In this project I installed
 ## Commands to Install The ROS System
 
 
-```
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+To prepare the computer to install the ROS system :
 
-sudo apt-get update
+```sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list' ``` 
 
-sudo apt-get install ros-noetic-desktop-full
+To open the key server on the computer :
 
-apt-cache search ros-noetic
+```sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654 -- ``` 
 
-echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+```sudo apt-get update```
 
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+To install the ROS system :
 
-sudo apt install python-rosdep
+```sudo apt-get install ros-noetic-desktop-full```
 
-sudo rosdep init
+```apt-cache search ros-noetic```
 
-rosdep update
+```echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc```
 
-sudo apt-get install ros-noetic-catkin
+```source ~/.bashrc```
 
-mkdir -p ~/catkin_ws/src
+```sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential```
 
-cd ~/catkin_ws/
+```sudo apt install python-rosdep```
 
-catkin_make
+```sudo rosdep init```
 
-cd ~/catkin_ws/src
-```
+```rosdep update```
+
+```sudo apt-get install ros-noetic-*************************************```
+
+To install catkin to be able to create a workspace :
+
+```mkdir -p ~/catkin_ws/src```
+
+```cd ~/catkin_ws/```
+
+```catkin_make```
+
+```cd ~/catkin_ws/src```
+
 
 
 ## Commands to Install The Package of The Arm
 
-```
-git clone https://github.com/smart-methods/arduino_robot_arm.git 
 
-cd ~/catkin_ws
+To get to the packages of the robot arm :
 
-rosdep install --from-paths src --ignore-src -r -y
+```git clone https://github.com/smart-methods/arduino_robot_arm.git``` 
 
-sudo apt-get install ros-noetic-moveit
+```cd ~/catkin_ws```
 
-sudo apt-get install ros-noetic-joint-state-publisher ros-kinetic-joint-state-publisher-gui
+```rosdep install --from-paths src --ignore-src -r -y```
 
-sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher
+```sudo apt-get install ros-noetic-moveit```
 
-sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control
+```sudo apt-get install ros-noetic-joint-state-publisher ros-kinetic-joint-state-publisher-gui```
 
-sudo nano ~/.bashrc
+```sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher```
 
-at the end of the (bashrc) file add the follwing line
-(source /home/ReemShaya/catkin_ws/devel/setup.bash)
-then 
-ctrl + o
+```sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control```
 
-source ~/.bashrc
+Type this command in the terminal, then it will ask you for the password, and when you type the password, it will open another page for you :
 
-roslaunch robot_arm_pkg check_motors.launch
-```
+```sudo nano ~/.bashrc```
+
+
+Here I have to change the source path, I will put it in the bashrc. Because the bashrc file is the one that runs as soon as you start the Ubuntu system and then runs the internal systems and programs .
+
+So at the end of the (bashrc) file add the follwing line :
+
+```(source /home/ReemShaya/catkin_ws/devel/setup.bash)```
+
+then (ctrl + o) then (enter) then (ctrl + x)
+
+```source ~/.bashrc```
+
+
 
 ## Launching the Arm
 
